@@ -1,5 +1,12 @@
+:root {
+    --cor-primaria: #5B88A5;
+    --cor-secundaria: #FFFFFF;
+    --cor-terciaria: #2148C0;
+}
+
 body {
-    background-color: #5B88A5;
+    background-color: var(--cor-primaria);
+    font-family: "Montserrat", sans-serif;
 }
 
 .container {
@@ -9,4 +16,45 @@ body {
 .image {
     width: 50%;
     margin-top: 100px;
+}
+
+.campo input {
+    background-color: transparent;
+    padding: .5rem;
+    color: var(--cor-secundaria)
+}
+
+.campo input::placeholder {
+    color: var(--cor-secundaria);
+    opacity: .5;
+    font-size: 1rem;
+}
+
+.campo input:focus {
+    color: var(--cor-secundaria);
+    opacity: .5;
+    background-color: var(--cor-primaria);
+}
+
+.botao {
+    padding: .6rem;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
+    font-weight: 900;
+    border: none;
+    box-shadow: 3px 4px 25px #000;
+}
+
+.botao:hover {
+    /* background-color: var(--cor-primaria); */
+    border: 2px solid var(--cor-secundaria)
+}
+
+.link {
+    color: var(--cor-secundaria);
+    font-size: .8rem;
+}
+
+.link:hover {
+    text-decoration-color: var(--cor-secundaria);
 }
