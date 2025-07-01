@@ -58,3 +58,19 @@ body {
 .link:hover {
     text-decoration-color: var(--cor-secundaria);
 }
+
+.input-icon-wrapper {
+    position: relative;
+}
+
+.input-icon-wrapper i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--cor-secundaria);
+}
+
+.input-icon-wrapper input {
+    padding-left: 40px;
+}
